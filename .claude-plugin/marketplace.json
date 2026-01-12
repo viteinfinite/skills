@@ -9,8 +9,8 @@
   },
   "plugins": [
     {
-      "name": "viteinfinite-skills",
-      "source": "./viteinfinite-skills",
+      "name": "coding",
+      "source": "./coding",
       "description": "Skill pack for commit messages and documentation updates"
     }
   ]
