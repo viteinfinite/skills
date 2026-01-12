@@ -1,0 +1,5 @@
+{
+  "name": "documentation-updater",
+  "description": "Keeps project documentation accurate after changes",
+  "version": "1.0.0"
+}

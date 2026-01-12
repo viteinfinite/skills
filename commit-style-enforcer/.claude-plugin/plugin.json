@@ -1,0 +1,5 @@
+{
+  "name": "commit-style-enforcer",
+  "description": "Generates properly formatted commit messages",
+  "version": "1.0.0"
+}

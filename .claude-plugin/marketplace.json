@@ -1,0 +1,22 @@
+{
+  "name": "viteinfinite-claude-marketplace",
+  "owner": {
+    "name": "viteinfinite"
+  },
+  "metadata": {
+    "description": "Marketplace for viteinfinite Claude skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "commit-style-enforcer",
+      "source": "./commit-style-enforcer",
+      "description": "Generates properly formatted commit messages"
+    },
+    {
+      "name": "documentation-updater",
+      "source": "./documentation-updater",
+      "description": "Keeps project documentation accurate after changes"
+    }
+  ]
+}
