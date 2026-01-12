@@ -9,14 +9,9 @@
   },
   "plugins": [
     {
-      "name": "commit-style-enforcer",
-      "source": "./commit-style-enforcer",
-      "description": "Generates properly formatted commit messages"
-    },
-    {
-      "name": "documentation-updater",
-      "source": "./documentation-updater",
-      "description": "Keeps project documentation accurate after changes"
+      "name": "viteinfinite-skills",
+      "source": "./viteinfinite-skills",
+      "description": "Skill pack for commit messages and documentation updates"
     }
   ]
 }
