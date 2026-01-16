@@ -24,6 +24,19 @@ Install a plugin:
 /plugin install coding@viteinfinite-claude-marketplace
 ```
 
+## Direct clone (coding skills only)
+
+Clone only the contents of the `coding` folder to your current directory (excluding `.claude-plugin`):
+
+```shell
+git clone --depth 1 --filter=blob:none --sparse https://github.com/viteinfinite/claude-plugin-marketplace temp_repo
+cd temp_repo
+git sparse-checkout set coding/!coding/.claude-plugin
+mv coding/* .
+cd ..
+rm -rf temp_repo
+```
+
 ## Local testing
 
 ```shell
