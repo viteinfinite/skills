@@ -5,13 +5,13 @@
   },
   "metadata": {
     "description": "Marketplace for viteinfinite Claude skills",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "coding",
-      "source": "./coding",
-      "description": "Skill pack for commit messages and documentation updates"
+      "source": ".",
+      "description": "Skill pack for agentic loops, commit messages and documentation updates"
     }
   ]
 }
