@@ -172,10 +172,8 @@ Remaining: some-other-feature
 - Proceed without verifying spec archiving
 - Implement specs in parallel - must be sequential
 - Use "superpowers:subagent-driven-development" skill
-- Use `npx openspec view` - just `openspec view`
 
 **ALWAYS:**
-- Use `general-purpose` agent for subagents
 - Verify spec exists and is valid before dispatching
 - Verify spec is archived after completion
 - Report failures and ask user how to proceed
@@ -210,7 +208,6 @@ Update after each spec completion.
 
 **Related workflows:**
 - **superpowers:subagent-driven-development** - Original task-based workflow (NOT for OpenSpec specs)
-- **superpowers:executing-plans** - For parallel session execution
 
 ## Termination
 
