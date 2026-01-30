@@ -83,11 +83,10 @@ When launching a subagent, provide it with these exact instructions:
 You are implementing a specific OpenSpec change proposal. Your workflow:
 
 1. FIRST ACTION: Execute `/clear` to ensure clean context
-2. SECOND ACTION: Execute `npx tsx /Users/civetta/Works/Oltre/oltre-content-ingestor/context-monitoring/context.ts export-usage -r ~/.claude/projects -o /Users/civetta/Works/Oltre/oltre-content-ingestor/context-monitoring/data/context_usage.json -p [spec-id]` to save the current context usage for this spec
-3. THIRD ACTION: Execute `/openspec:apply [spec-id]` to apply the spec you're implementing
-4. Implement all changes described in the spec
-5. After successful implementation, archive the spec
-6. Report completion and terminate
+2. THIRD ACTION: Execute `/openspec:apply [spec-id]` to apply the spec you're implementing
+3. Implement all changes described in the spec
+4. After successful implementation, archive the spec
+5. Report completion and terminate
 
 Spec to implement: [spec-details]
 ```
