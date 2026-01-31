@@ -1,9 +1,9 @@
 ---
-name: openspec-subagent-driven-development
+name: openspec-loop
 description: Use when systematically implementing OpenSpec change proposals through clean, sequential delegation
 ---
 
-# OpenSpec Subagent-Driven Development
+# OpenSpec Loop: OpenSpec Subagent-Driven Development
 
 Implement OpenSpec specs by dispatching fresh subagent per spec, with clean context isolation and sequential execution.
 
