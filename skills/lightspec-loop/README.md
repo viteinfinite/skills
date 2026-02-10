@@ -1,6 +1,6 @@
-# OpenSpec Subagent-Driven Development
+# LightSpec Subagent-Driven Development
 
-A Claude Code skill for systematically implementing OpenSpec change proposals through **fresh subagents at each iteration**.
+A Claude Code skill for systematically implementing [LightSpec](https://github.com/augmenter-dev/lightspec) change proposals through **fresh subagents at each iteration**.
 
 Inspired by the [Ralph](https://ghuntley.com/ralph/) Technique and Jesse Vincent's [Superpowers](https://github.com/obra/superpowers) skill collection.
 
@@ -21,7 +21,7 @@ Traditional approaches accumulate context across multiple specs, leading to conf
 ## When to Use
 
 Use this skill when you have:
-- Multiple OpenSpec change proposals to implement
+- Multiple LightSpec change proposals to implement
 - Specs that are independent changes (not tightly coupled)
 - Need for clean context per spec to avoid confusion
 
@@ -30,36 +30,36 @@ Use this skill when you have:
 ## Installation
 
 ```bash
-npx skills add https://github.com/viteinfinite/skills --skill openspec-loop
+npx skills add https://github.com/viteinfinite/skills --skill lightspec-loop 
 ```
 
-Restart yout agent to load the skill.
+Restart your agent to load the skill.
 
 ## Usage
 
-Simply invoke the skill when you want to implement OpenSpec specs:
+Simply invoke the skill when you want to implement LightSpec specs:
 
 ```
-Hey Claude, use OpenSpec Subagent-Driven Development to implement my pending specs
+Hey Claude, use LightSpec Subagent-Driven Development to implement my pending specs
 ```
 
 The skill will:
-1. Run `openspec view` to discover active specs
+1. Run `lightspec view` to discover active specs
 2. Present the list to you for confirmation
 3. For each spec (sequentially):
    - Dispatch a fresh general-purpose subagent
    - Subagent executes `/clear` for clean context
    - Subagent exports context usage tracking
-   - Subagent applies the spec with `/openspec:apply [spec-id]`
+   - Subagent applies the spec with `/lightspec:apply [spec-id]`
    - Subagent implements all changes
-   - Subagent archives the spec with `/openspec:archive [spec-id]`
+   - Subagent archives the spec with `/lightspec:archive [spec-id]`
    - Verify archiving succeeded
 4. Provide implementation summary
 
 ## Example Workflow
 
 ```
-You: I'm using OpenSpec Subagent-Driven Development to implement pending specs.
+You: I'm using LightSpec Subagent-Driven Development to implement pending specs.
 
 [Discovers 3 active specs]
 
@@ -122,9 +122,9 @@ Think of it like this:
 ## Requirements
 
 This skill requires:
-- **OpenSpec** - For managing change proposals
-- **openspec:apply** skill - For applying specs to the workspace
-- **openspec:archive** skill - For archiving completed specs
+- **LightSpec** - For managing change proposals
+- **lightspec:apply** skill - For applying specs to the workspace
+- **lightspec:archive** skill - For archiving completed specs
 - **Context monitoring** - For tracking context usage per spec (path configurable)
 
 ## How It Works
@@ -132,11 +132,11 @@ This skill requires:
 Each subagent receives these instructions:
 
 ```
-You are implementing a specific OpenSpec change proposal. Your workflow:
+You are implementing a specific LightSpec change proposal. Your workflow:
 
 1. FIRST ACTION: Execute `/clear` to ensure clean context
 2. SECOND ACTION: Export context usage tracking
-3. THIRD ACTION: Execute `/openspec:apply [spec-id]` to apply the spec
+3. THIRD ACTION: Execute `/lightspec:apply [spec-id]` to apply the spec
 4. Implement all changes described in the spec
 5. After successful implementation, archive the spec
 6. Report completion and terminate
@@ -160,14 +160,14 @@ This skill is inspired by:
 - **[Ralph](https://github.com/ralphhq/ralph)** - The pioneering agentic coding framework that demonstrated the power of fresh context and clean delegation patterns
 - **[Superpowers](https://github.com/coleam00/ottomator-agents)** - Particularly the `superpowers:subagent-driven-development` skill, which established the pattern of disciplined subagent workflows
 
-This skill adapts those concepts specifically for OpenSpec workflows, with emphasis on:
+This skill adapts those concepts specifically for LightSpec workflows, with emphasis on:
 - Fresh subagent per spec (Ralph's clean context principle)
 - Sequential execution with isolation (Superpowers' disciplined delegation)
-- Automated archiving and tracking (OpenSpec integration)
+- Automated archiving and tracking (LightSpec integration)
 
 ## Related Skills
 
-- **superpowers:subagent-driven-development** - Original task-based workflow (use for non-OpenSpec tasks)
+- **superpowers:subagent-driven-development** - Original task-based workflow (use for non-LightSpec tasks)
 
 ## License
 

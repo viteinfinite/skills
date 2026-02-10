@@ -29,7 +29,7 @@ Task tool (general-purpose):
     ## Your Job
 
     Once you're clear on requirements:
-    1. Implement exactly what the task specifies using /openspec:apply <spec-id>; regularly commit your work
+    1. Implement exactly what the task specifies using /lightspec:apply <spec-id>; regularly commit your work
     2. Verify the implementation works
     3. Self-review (see below)
     4. Report back
@@ -56,7 +56,7 @@ Task tool (general-purpose):
     - [ ] Do tests actually verify behavior (not just mock behavior)?
 
     **Archiving:**
-    - [ ] Did I archive the spec after implementation using `/openspec:archive <spec-id>`?
+    - [ ] Did I archive the spec after implementation using `/lightspec:archive <spec-id>`?
 
     If you find issues during self-review, fix them now before reporting.
 
